@@ -52,7 +52,8 @@ class YaDisk():
             return 'https://oauth.yandex.ru/authorize'+'?'+urlencode(query)
     def token(self, url='https://oauth.yandex.ru/token'):
         url = 'https://oauth.yandex.ru/authorize?response_type=code&client_id=b69d36bdd5074a1ba7d017995e69f728'
-        # короче дописать чутка там надо попробовать с кодом рещить ага вот ссылка: https://yandex.ru/dev/direct/doc/examples-v5/python3-requests-token.html
+        
+        
         a = self.request(url)
         print (a.text)
 
